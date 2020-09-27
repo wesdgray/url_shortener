@@ -4,10 +4,7 @@ services:
     build: .
     ports:
       - "8080:8080"
-    network: url_shorti
-    name: url_short
-  mongo:
+  my_mongo:
     image: "mongo"
     ports:
       - "27017:27017"
-    name: my-mongo 

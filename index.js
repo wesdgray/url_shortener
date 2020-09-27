@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.static('./public'));
 
 // Setup Monk DB
-const db = monk('my-mongo:27017');
+const db = monk('my_mongo:27017');
 const urls = db.get('urls');
 urls.createIndex('url');
 urls.createIndex('slug');
