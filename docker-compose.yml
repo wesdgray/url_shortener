@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  url_short:
+    build: .
+    ports:
+      - "8080:8080"
+    network: url_shorti
+    name: url_short
+  mongo:
+    image: "mongo"
+    ports:
+      - "27017:27017"
+    name: my-mongo 
