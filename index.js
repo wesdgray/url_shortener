@@ -51,7 +51,7 @@ app.post('/url', async (req, res, next) => {
     }
     const slug_exists = await urls.findOne({ slug });
     if (slug_exists) {
-      throw new Error('Slug in use');
+      throw new Error('Slug in use 🤢');
     }
     const created = await urls.insert(newUrl);
     res.json(created);
